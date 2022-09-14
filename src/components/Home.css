@@ -1,0 +1,41 @@
+.Navbar{
+    background-color: #222629;
+    height: 90px;
+}
+.Navbar-comp{
+    float: right;
+    margin-right: 0px;
+    margin-top:20px;
+    padding: 12px 12px;
+    border-radius: 5px;
+}
+.Navbar-comp:hover{
+    color: #86C232;
+}
+.submit{
+    margin-right: 15px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 25px;
+    row-gap: 25px;
+    padding: 25px;
+    margin-left: auto;
+}
+#homeb{
+    padding: 12px 12px;
+    background-color: #86C232;
+    color: white;
+    width: 25px;
+    float: right;
+    margin-top:20px;
+    border-radius: 12px;
+
+}
+/* img{
+    max-width: 75px ;
+    max-height: 75px;
+    margin-top: 15px;
+    margin-left: 15px;
+} */

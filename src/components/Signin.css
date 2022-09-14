@@ -1,0 +1,37 @@
+.topic{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    word-wrap: normal;
+    color: azure;
+    text-align: center;
+}
+.formbox{
+    background-color:black;
+    max-width: 250px;
+    min-width: 250px;
+    padding: 25px 25px;
+    box-sizing:border-box;
+    border-radius: 12px 12px;
+    margin-top: 25px;
+    margin-left: 750px;
+}
+button{
+    padding: 10px 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px 12px; 
+}
+.slabel{
+    font-family: 'Roboto Flex', sans-serif;
+    color: azure;
+    text-align: center;
+
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    color: azure;
+}
