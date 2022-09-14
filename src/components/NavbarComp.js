@@ -1,8 +1,10 @@
 import { Component } from 'react'
 import {Nav,Navbar,Button,Container,Form} from 'react-bootstrap'
-import {BrowserRouter} from 'react-router-dom'
- export default class NavbarComp extends Component {
-   render() {
+import {BrowserRouter , useNavigate} from 'react-router-dom'
+ export default function NavbarComp()  {
+
+  const navigate = useNavigate();
+
      return (
        <div>
         <Navbar bg="dark" variant={"dark"} expand="lg">
@@ -23,8 +25,8 @@ import {BrowserRouter} from 'react-router-dom'
                 style={{ maxHeight: '100px' }}
                 navbarScroll>
                 <Nav.Link href="#action1">Home</Nav.Link>
-                <Button type='button'>Signup</Button>&nbsp;
-                <Button type='button' bg="red">SignIn</Button>
+                <Button  onClick={()=>navigate('/signup')}>Signup</Button>&nbsp;
+                <Button bg="red">SignIn</Button>
             </Nav>
             <Form className="d-flex">
                 <Form.Control
@@ -37,12 +39,8 @@ import {BrowserRouter} from 'react-router-dom'
             </Form>
             </Navbar.Collapse>
         </Container>
-    </Navbar>
-    <BrowserRouter>
-    
-    </BrowserRouter>
+    </Navbar> 
        </div>
      )
-   }
  }
  

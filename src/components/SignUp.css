@@ -1,0 +1,16 @@
+.shadowbox{
+    background-color:black;
+    width: 450px;
+    height: auto;
+    padding: 25px 25px;
+    box-sizing:border-box;
+    border-radius: 10px 10px;
+    margin: auto;
+    margin-top: 50px;
+}
+.ulabel{
+    font-family: 'Roboto Flex', sans-serif;
+    color: azure;
+    text-align: center;
+    font-size: 25px;
+}

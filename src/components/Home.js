@@ -9,10 +9,12 @@ import SignUp from "./SignUp.js"
 import Slider from "./Slider.js"
 import Signin from "./Signin.js"
 
+
+
 function Home(){
     return(
         <div className="home">
-            <NavbarComp/>
+            
             <Slider/>
             <div className="grid-container">
                 {
@@ -21,8 +23,7 @@ function Home(){
                     })
                 }
             </div> 
-            {/* <SeatLayout /> */}
-            {/* <Signin/> */}
+            
       </div>
     );
 }

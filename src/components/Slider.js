@@ -1,37 +1,44 @@
 import React from "react";
 import "./Slider.css"
 function Slider(){
+
+    function counter(){
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio'+counter).checked=true;
+            counter++;
+            if(counter>2){
+                counter=1;
+            }
+        },3000);
+    }
+
     return(
-        <div className="carousel w-full">
-  <div id="slide1" className="carousel-item relative w-full">
-    <img src="../images/i1.jpg" className="w-full" alt="i1"/>
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" className="btn btn-circle">❮</a> 
-      <a href="#slide2" className="btn btn-circle">❯</a>
+      <div className="sliderbody">
+        <div className="slider">
+            <div className="slides">
+                <input type="radio" name="radios" id="radio1"/>
+                <input type="radio" name="radios" id="radio2"/>
+            
+            <div className="slide first ">
+                <img src="../images/i1.jpg"/>
+            </div>  
+            <div className="image">
+                <img src="../images/i2.jpg"/>
+            </div>
+            <div className="auto">
+                <div className="auto1"></div>
+                <div classnName="auto2"></div>
+            </div>
+        </div>
+        <div classnName="manual">
+            <label className="manuals" for="radio1"></label>
+            <label className="manuals" for="radio2"></label>
+        </div>
+        {counter()}
     </div>
-  </div> 
-  <div id="slide2" className="carousel-item relative w-full">
-    <img src="../images/i2.jpg" className="w-full"  alt="i2"/>
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" className="btn btn-circle">❮</a> 
-      <a href="#slide3" className="btn btn-circle">❯</a>
     </div>
-  </div> 
-  <div id="slide3" className="carousel-item relative w-full">
-    <img src="../images/i3.jpg" className="w-full"  alt="i3"/>
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" className="btn btn-circle">❮</a> 
-      <a href="#slide4" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide4" className="carousel-item relative w-full">
-    <img src="../images/i4.jpg" className="w-full" />
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide3" className="btn btn-circle">❮</a> 
-      <a href="#slide1" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-</div>
+
     );
 }
 export default Slider

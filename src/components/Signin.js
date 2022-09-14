@@ -4,15 +4,16 @@ function Signin(){
     return(
         <div className="formbox">
             <form>
-                <h3 className="topic">Welcome to Signin Page!</h3>
+                <h3 className="topic"> Signin</h3>
                 <br/>
                 <label className="slabel">UserName</label>
-                <div></div>
-                <input type="text" placeholder="Enter Your Username--"/>
-                <div></div>
-                <label className="slabel">Password</label>
-                <input type="password" placeholder="Enter Your Password"/>
                 <br/>
+                <input type="text" placeholder="Enter Your Username--"/>
+                <br/><br/>
+                <label className="slabel">Password</label>
+                <br/>
+                <input type="password" placeholder="Enter Your Password"/>
+                <br/><br/>
                 <button type="button">Submit</button>
             </form>
         </div>
