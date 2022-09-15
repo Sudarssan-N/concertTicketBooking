@@ -22,7 +22,7 @@ body{
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 25px;
-    row-gap: 25px;
+    row-gap: 100px;
     padding: 25px;
     margin-left: auto;
 }
@@ -36,9 +36,9 @@ body{
     border-radius: 12px;
 
 }
-/* img{
-    max-width: 75px ;
-    max-height: 75px;
-    margin-top: 15px;
-    margin-left: 15px;
-} */
+.filterb1 {
+    padding: 12px 12px;
+}
+.filterb2{
+    padding: 12px 12px;
+}

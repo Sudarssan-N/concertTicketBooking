@@ -1,0 +1,25 @@
+.details{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.6);/*w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 800px;
+    padding: 20px;
+    text-align: center;
+  }
+  .detail{
+    filter: blur(0px);
+    height: 500px;
+    width: 100%;
+  }
+
+.bigImage{
+    height: 100%;
+    width: 100%;
+}

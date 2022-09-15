@@ -4,26 +4,31 @@
     margin: 0;
     padding: 0;
 }
+
+.poster{
+    border: 1px solid black;
+    width: 350px;
+    border-radius: 12px;
+    height: 455px;
+}
+
 .j1{
-    height: 350px;
-    width: 300px;
-    margin-left: -10px;
-    margin-right: -10px;
+    height: 100%;
+    width: 100%;
+    /* margin-left: -10px;
+    margin-right: -10px; */
     border-radius: 12px 12px 12px 12px;
 }
 
-/* .movie{
-    margin-top: 100px;
-    max-height: auto;
-    max-width: 265px;
-    padding: 15px 15px;
-    border-radius: 12px 12px;
-    background-color: #A9A9A9;
-} */
-/* .button1{
-    border-radius: 12px ;
-    padding: 12px 12px;
-    background-color: dodgerblue;
-    margin: auto;
-    max-width: 55px;   
-} */
+.content{
+    flex-grow: 1;
+    /* height: 100%;
+    width: 100%; */
+    font-size: 20px;
+    position: absolute;
+    color: brown;
+    text-align: center;
+    border: 1px solid brown;
+    margin: 0px 0px 0px 0px ;
+}
+

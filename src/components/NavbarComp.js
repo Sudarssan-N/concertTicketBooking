@@ -1,6 +1,8 @@
 import { Component } from 'react'
-import {Nav,Navbar,Button,Container,Form} from 'react-bootstrap'
+import {Nav,Navbar,Button,Container,Form,Dropdown} from 'react-bootstrap'
 import {BrowserRouter , useNavigate} from 'react-router-dom'
+
+
  export default function NavbarComp()  {
 
   const navigate = useNavigate();
@@ -26,8 +28,18 @@ import {BrowserRouter , useNavigate} from 'react-router-dom'
                 navbarScroll>
                 <Nav.Link href="#action1">Home</Nav.Link>
                 <Button  onClick={()=>navigate('/signup')}>Signup</Button>&nbsp;
-                <Button bg="red">SignIn</Button>
+                <Button bg="red" onClick={()=>navigate('/signin')}>SignIn</Button>&nbsp
             </Nav>
+                <div className="dropdown">
+                    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Profile
+                    </button>
+                    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a className="dropdown-item" href="#">Action</a>
+                    <a className="dropdown-item" href="#">Another action</a>
+                    <a className="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
             <Form className="d-flex">
                 <Form.Control
                 type="search"
